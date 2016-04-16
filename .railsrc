@@ -1,0 +1,2 @@
+# Uses PostgreSQL by default when using `rails new`
+-d postgresql

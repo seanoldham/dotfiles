@@ -1,0 +1,33 @@
+[user]
+  name = Sean Oldham
+
+  email = seanosaur@me.com
+
+[credential]
+  helper = osxkeychain
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+  # Use Atom as default editor
+  editor = atom
+
+[alias]
+  co = checkout
+
+  # View the current working tree status using the short format
+  s = status -s
+
+[filter "lfs"]
+  clean = git lfs clean %f
+
+  smudge = git lfs smudge %f
+
+  required = true
+
+[filter "media"]
+  clean = git media clean %f
+
+  smudge = git media smudge %f
+
+  required = true
