@@ -52,7 +52,30 @@ DISABLE_UPDATE_PROMPT="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails ruby zsh-syntax-highlighting)
+plugins=(brew bundler git osx rails z zsh-syntax-highlighting)
+
+# User configuration
+
+# export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='atom'
+fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # User configuration
 
@@ -63,8 +86,11 @@ export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 #aliases :)
 alias gpom="git push origin master"
 alias gphm="git push heroku master"
+alias mm="middleman"
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH="$HOME/.bin:$PATH"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
