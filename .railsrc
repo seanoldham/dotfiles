@@ -1,2 +1,5 @@
-# Uses PostgreSQL by default when using `rails new`
+# Don't run bundle install
+-B
+
+# Uses PostgreSQL
 -d postgresql
