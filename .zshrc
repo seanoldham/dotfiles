@@ -87,10 +87,10 @@ export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 alias gpom="git push origin master"
 alias gphm="git push heroku master"
 alias mm="middleman"
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
+alias s="http-server"
 
 export PATH="$HOME/.bin:$PATH"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(rbenv init -)"
