@@ -88,6 +88,7 @@ alias gpom="git push origin master"
 alias gphm="git push heroku master"
 alias mm="middleman"
 alias s="http-server"
+alias rm=trash
 
 export PATH="$HOME/.bin:$PATH"
 
