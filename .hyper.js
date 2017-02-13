@@ -1,5 +1,7 @@
 module.exports = {
   config: {
+    summonShortcut: 'Ctrl+Option+Cmd+H',
+
     // default font size in pixels for all tabs
     fontSize: 14,
 
@@ -62,7 +64,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-blink'],
+  plugins: ['hyperterm-blink', 'hypercwd', 'hyperterm-summon', 'hyperterm-cursor'],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
