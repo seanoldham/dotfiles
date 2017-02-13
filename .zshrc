@@ -95,3 +95,5 @@ export PATH="$HOME/.bin:$PATH"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(rbenv init -)"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
