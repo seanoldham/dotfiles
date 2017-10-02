@@ -68,7 +68,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='atom'
+  export EDITOR='subl'
 fi
 
 # Compilation flags
@@ -97,5 +97,3 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(rbenv init -)"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-eval "$(thefuck --alias)"
